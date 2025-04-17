@@ -3,26 +3,44 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Web Page</title>
+    <link rel="stylesheet" href="syle.css">
 </head>
 
 <body>
+    <div class="container">
+        <div class="navbar">
+            <ul class="nav">
+                <li><a href="#Headings">Headings</a></li>
+                <li><a href="#pgh">Paragraphs</a></li>
+                <li><a href="#Lists">Lists</a></li>
+                <li><a href="#Images">Images</a></li>
+                <li><a href="#Links">Links</a></li>
+            </ul>   
+        </div>
+        <div class="mobile-nav">
+            <a href="#">☰ Menu</a>
+        </div>
+    
+    </div>
+    
 
     <!-- Task 2: Headings, Paragraphs, HR, BR -->
-    <h1>Welcome to My Web Page</h1>
-    <h2>This is an H2 Heading</h2>
-    <h3>This is an H3 Heading</h3>
-    <h4>This is an H4 Heading</h4>
-    <h5>This is an H5 Heading</h5>
-    <h6>This is an H6 Heading</h6>
+    <h1 class="Heading" id="Headings">Welcome to My Web Page</h1>
+    <h2 class="Heading" id="Headings">This is an H2 Heading</h2>
+    <h3 class="Heading" id="Headings">This is an H3 Heading</h3>
+    <h4 class="Heading" id="Headings">This is an H4 Heading</h4>
+    <h5 class="Heading" id="Headings">This is an H5 Heading</h5>
+    <h6 class="Heading" id="Headings">This is an H6 Heading</h6>
 
-    <p>This paragraph gives you a brief intro about the page.</p>
+    <p class="paragraph" id="pgh">This paragraph gives you a brief intro about the page.</p>
     <hr>
     <p>This is a second paragraph.<br>
         And this line starts after a line break.</p>
 
     <!-- Task 3: Lists -->
-    <h2>My Top 5 Favorite Books</h2>
+    <h2 class="Heading" id="Headings">My Top 5 Favorite Books</h2>
     <ol>
         <li>The Alchemist</li>
         <li>Atomic Habits</li>
@@ -31,7 +49,7 @@
         <li>Clean Code</li>
     </ol>
 
-    <h2>My Top 5 Hobbies</h2>
+    <h2 class="Heading" id="Headings">My Top 5 Hobbies</h2>
     <ul>
         <li>Reading</li>
         <li>Photography</li>
@@ -41,18 +59,50 @@
     </ul>
 
     <!-- Task 4: Images with alt text -->
-    <h2>My Favorite Images</h2>
-    <img src="https://via.placeholder.com/200" alt="Placeholder image of a nature scene" width="200">
-    <img src="https://via.placeholder.com/150" alt="Another placeholder image" width="150">
+    <h2 class="Heading" id="Headings">My Favorite Images</h2>
+    <img src="OIP.jpg" alt="Placeholder image of a nature scene" width="200">
+    <img src="learn-coding.webp" alt="Another placeholder image" width="150">
 
     <!-- Task 5: Links -->
-    <h2>Useful Links</h2>
-    <p>
+    <h2 class="Heading" id="Headings">Useful Links</h2>
+    <p class="parag" id="pg">
         Visit <a href="https://www.wikipedia.org" target="_blank">Wikipedia</a><br>
         Watch videos on <a href="https://www.youtube.com" target="_blank">YouTube</a><br>
         Learn code at <a href="https://www.freecodecamp.org" target="_blank">freeCodeCamp</a>
     </p>
+    <table border="1">
+        <tr>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wenesday</th>
+            <th>Thusday</th>
+            <th>Friedy</th>
+        </tr>
+       
+        <tr>
+            <td>8:00-10:00 Web technology</td>
+            <td>8:00-10:00 coding practical own </td>
+            <td>8:00-10:00 IT innovation</td>
+            <td>8:00-10:00 Financial Information</td>
+            <td>8:00-10:00 Free</td>
+        </tr>
 
+        <tr>
+            <td>21:00-22:00 python</td>
+            <td>8:00-10:00 Android </td>
+            <td>8:00-10:00 IT innovation</td>
+            <td>8:00-10:00 Financial Information</td>
+            <td>8:00-10:00 Java</td>
+        </tr>
+
+        <tr>
+            <td>8:00-10:00 Web technology</td>
+            <td>8:00-10:00 Android </td>
+            <td>8:00-10:00 IT innovation</td>
+            <td>8:00-10:00 Financial Information</td>
+            <td>8:00-10:00 Java</td>
+        </tr>
+    </table>
 </body>
 
 </html>

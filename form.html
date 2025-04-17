@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <form action="" method="post">
+            <fieldset>
+
+                <label>Name</label>
+                <input type="text" name="name" class="form-control" placeholder="Enter your name"><br><br>
+         
+                <label>Email</label>
+                <input type="email" name="email" class="form-control" placeholder="Enter your email"><br><br>
+         
+                <label>Password</label>
+                <input type="password" name="password" class="form-control" placeholder="Enter your password"><br><br>    
+            </fieldset><br><br>
+           
+            <fieldset>
+                <lagend>Gender</lagend>
+                <input type="radio" id="male" name="gender" value="Male">
+                <label>Male</label>
+    
+                <input type="radio" id="female" name="gender" value="Female">
+                <label>Female</label>
+            </fieldset><br><br>
+            <fieldset>
+                <label>Interest</label><br>
+                <input type="checkbox" name="Interest" value="Sport">Sport<br>
+                <input type="checkbox" name="Interest" value="Reading">Reading<br>
+                <input type="checkbox" name="Interest" value="Jumping">Jumping<br><br>
+
+                <label for="country">Select your country:</label>
+                <select id="country" name="country ">
+                    <option value="">choose country do you preffer</option>
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                    <option value="Tanzania">Tanzania</option>
+                </select>
+           </fieldset><br><br>
+           
+           <fieldset>
+
+            <label for="profile">Profile Picture:</label>
+            <input type="file" id="profile" name="profile" accept="image/*"><br><br>
+
+            <input type="submit" value="Upload">
+           </fieldset>
+           <button type="button" value="submit" name="login">Submit</button>
+
+       
+     </form>
+
+</body>
+</html>
