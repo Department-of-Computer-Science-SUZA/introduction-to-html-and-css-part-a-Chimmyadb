@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic infrmation form</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Academic information</legend>
+            <label for="degree">Degree:</label>
+            <select id="degree" name="degree ">
+                <option value="mba">Master of Business Administration</option>
+            </select><br><br>
+
+            <label for="student_id">Student ID:</label>
+            <input type="text" id="student_id" name="student_id" required><br><br>
+            <!-- <section name="classes" multiple sise="3">
+                <label for="subjects">Class attended</label>
+                <input type="checkbox" id="geography" name="subjects" value="Geography">
+                <label for="geography">Geography</label>
+                <input type="checkbox" id="math" name="subjects" value="math">
+                <label for="mathmatic">Mathmatic</label>
+                <input type="checkbox" id="english" name="subjects" value="english">
+                <label for="english">English</label>
+            </section> -->
+            <label for="subjects">Class attended:</label>
+            <select multiple>
+                <option value="">Geography</option>
+                <option value="">Mathmatic</option>
+                <option value="">English</option>
+            </select>
+
+        </fieldset>
+        <fieldset>
+            <legend>Personal Details</legend>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname"><br><br>
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname"><br><br>
+
+            <label for="gender">Gender</label>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label>Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label>Female</label><br><br>
+            <label for="email">Email</label>
+            <input type="email" id="email"><br><br>
+            
+        </fieldset><br><br>
+            <textarea rows="4" cols="50">TERMS AND CONDITIONS ...</textarea><br><br>
+            <input type="submit" value="Send Form">
+            <input type="reset" value="Clear Form">
+    </form>
+</body>
+</html>
