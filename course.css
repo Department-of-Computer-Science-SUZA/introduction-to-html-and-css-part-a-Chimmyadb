@@ -1,0 +1,12 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+    background: #fffefc;
+}
+img{
+    float: right;
+    margin-left: 40px;
+}
+ol,ul,dl{
+    margin-bottom: 20px;
+}

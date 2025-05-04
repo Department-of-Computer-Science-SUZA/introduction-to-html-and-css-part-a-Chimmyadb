@@ -1,0 +1,9 @@
+.float-right{
+    float: right;
+    margin: 10px;
+    width: 200px;
+}
+p{
+    text-align: justify;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
