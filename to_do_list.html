@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Super Nifty To-Do List</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+    h1 {
+      color: #333;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin-top: 20px;
+    }
+    li {
+      padding: 8px 12px;
+      margin-bottom: 4px;
+      border: 1px solid #ccc;
+    }
+    input[type="text"] {
+      padding: 6px;
+      width: 200px;
+      margin-right: 10px;
+    }
+    button {
+      padding: 6px 12px;
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>My Super Nifty To-Do List</h1>
+  <ul id="list"></ul>
+
+  <div>
+    <input type="text" id="item" placeholder="Enter item" />
+    <button id="add">Add</button>
+    <button id="remove">Remove</button>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const list = document.getElementById('list');
+      const input = document.getElementById('item');
+      const addBtn = document.getElementById('add');
+      const removeBtn = document.getElementById('remove');
+
+      function updateColors() {
+        const items = list.querySelectorAll('li');
+        items.forEach((li, index) => {
+          li.style.backgroundColor = index % 2 === 0 ? 'white' : 'yellow';
+        });
+      }
+
+      addBtn.addEventListener('click', () => {
+        const words = input.value.trim().split(/\s+/);
+        for (const word of words) {
+          if (word) {
+            const li = document.createElement('li');
+            li.textContent = word;
+            list.appendChild(li);
+          }
+        }
+        input.value = '';
+        updateColors();
+      });
+
+      removeBtn.addEventListener('click', () => {
+        const value = input.value.trim().toLowerCase();
+        const items = list.querySelectorAll('li');
+        for (let i = 0; i < items.length; i++) {
+          if (items[i].textContent.toLowerCase() === value) {
+            list.removeChild(items[i]);
+            break;
+          }
+        }
+        input.value = '';
+        updateColors();
+      });
+    });
+  </script>
+
+</body>
+</html>
