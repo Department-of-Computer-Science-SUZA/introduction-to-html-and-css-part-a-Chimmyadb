@@ -1,0 +1,92 @@
+ body {
+      font-family: 'Calibri', sans-serif;
+      padding: 40px;
+    }
+
+    .container {
+      max-width: 600px;
+      background-color: #b0dbfe;
+      margin: auto;
+      padding: 30px 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 30px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+    }
+
+    label {
+      display: block;
+      margin-top: 18px;
+      font-weight: 600;
+      color: #222;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    textarea {
+      width: 100%;
+      padding: 12px 15px;
+      margin-top: 6px;
+      border-radius: 8px;
+      border: 1.8px solid #bbb;
+      font-size: 16px;
+      transition: border-color 0.3s ease;
+      box-sizing: border-box;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="date"]:focus,
+    textarea:focus {
+      border-color: #005f99;
+      outline: none;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 70px;
+    }
+
+    .checkbox-group {
+      margin-top: 22px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 600;
+      color: #222;
+    }
+
+    button {
+      margin-top: 30px;
+      background-color: #023555;
+      color: #fff;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 20px;
+      font-size: 17px;
+      cursor: pointer;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      transition: background-color 0.3s ease;
+      width: 50%;
+      
+    }
+
+    button:hover {
+      background-color: #017dca;
+    }
+
+    .error-message {
+      color: #e03e3e;
+      font-size: 14px;
+      margin-top: 6px;
+      display: none;
+    }
+   

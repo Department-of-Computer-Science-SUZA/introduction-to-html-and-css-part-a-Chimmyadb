@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Student Registration Form</title>
+ <link rel="stylesheet" href="student_registration.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Student Registration Form</h1>
+    <form id="studentForm" onsubmit="return validateRegistrationForm()">
+
+      <label for="studentName">Student Name:</label>
+      <input type="text" id="studentName" name="studentName" maxlength="30" required />
+      <div id="nameError" class="error-message">Name should only contain alphabets and max 30 characters.</div>
+
+      <label for="regNumber">Register Number:</label>
+      <input type="text" id="regNumber" name="regNumber" required />
+      <div id="regError" class="error-message">Register number should be alphanumeric only.</div>
+
+      <label for="dobInput">Date of Birth:</label>
+      <input type="date" id="dobInput" name="dobInput" required />
+
+      <label for="programInput">Program:</label>
+      <input type="text" id="programInput" name="programInput" required />
+
+      <label for="emailInput">Email:</label>
+      <input type="email" id="emailInput" name="emailInput" required />
+      <div id="emailError" class="error-message">Please enter a valid email address.</div>
+
+      <label for="tempAddress">Temporary Address:</label>
+      <textarea id="tempAddress" name="tempAddress" rows="3" required></textarea>
+
+      <div class="checkbox-group">
+        <input type="checkbox" id="sameAddressCheckbox" onchange="togglePermanentAddress()" />
+        <label for="sameAddressCheckbox">Permanent address is same as temporary address</label>
+      </div>
+
+      <label for="permAddress">Permanent Address:</label>
+      <textarea id="permAddress" name="permAddress" rows="3" required></textarea>
+
+      <label for="phoneInput">Phone Number:</label>
+      <input type="text" id="phoneInput" name="phoneInput" maxlength="10" required />
+      <div id="phoneError" class="error-message">Phone number must be exactly 10 digits.</div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script src="student_registration.js"></script>
+
+</body>
+</html>
+
+
